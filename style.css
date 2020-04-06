@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: rgba(237, 56, 43, 0.9);
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+}
+#navbar {
+  margin-right: 20px;
+  display: flex;
+  align-items: stretch;
+}
+#nav-ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+.nav-ul-li {
+  list-style-type: none;
+  display: flex;
+  align-items: stretch;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+}
+.nav-link:hover {
+  background-color: rgba(100, 100, 120, 1);
+}
+#main {
+  margin: 75px 0px 0px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#welcome-section {
+  height: 100vh;
+  background-color: gray;
+  background: linear-gradient(-15deg, rgba(25,25,25,1) 0%, rgba(112,112,112,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#welcome-section > h1 {
+  font-size: 3.5em;
+  color: #ccc;
+}
+#welcome-section > p {
+  font-size: 2em;
+  color: rgba(237, 56, 43, 0.9);
+  font-style: oblique;
+}
+#projects {
+  background-color: rgba(50, 56, 180, 0.9);
+  padding: 150px 35px;
+}
+#projects > h2 {
+  font-size: 2.7em;
+  color: #ccc;
+  border-bottom: 3px solid #ccc;
+  padding: 10px 25px;
+  margin: 0 auto;
+  max-width: 560px;
+}
+.project-tile {
+  margin: 50px;
+  padding: 20px;
+  display: grid;
+  width: 100%;
+  max-width: 1280px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
+}
+.project-tile > a {
+  text-decoration: none;
+  color: #CCC;
+  background-color: rgb(85, 85, 85);
+}
+a > img {
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 6.8rem);
+  object-fit: cover;
+}
+a > p {
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding: 20px 5px;
+  text-align: center;
+}
+.code {
+  color: rgb(85, 85, 85);
+  font-weight: 800;
+}
+.tiles:hover .code {
+  color: #ff7f50;
+}
+#contact {
+  background-color: rgb(85, 85, 85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+#contact > h2 {
+  font-size: 3.5em;
+  color: #ccc;
+}
+#contact > p {
+  font-size: 2em;
+  color: rgba(237, 56, 43, 0.9);
+  font-style: oblique;
+}
+footer {
+  background-color: rgb(105, 105, 105);
+  height: 50px;
+  border-top: 4px solid rgba(237, 56, 43, 1);
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer > p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+#fcc {
+  text-decoration: none;
+  color: #ccc;
+}
+.fa-github:before {
+    content: "\f09b"; 
+}
+.fa-free-code-camp:before {
+    content: "\f2c5"; 
+}
+.fa-linkedin:before {
+    content: "\f2c5"; 
+}
+#contact-links {
+  display: flex;
+}
+.contact-me {
+  text-decoration: none;
+  color: #CCC;
+  margin: 20px;
+  font-size: 1.4em;
+}
+.contact-me:hover {
+  margin-bottom: 0px;
+  padding-top: 15px;
+}
+
+
+@media (max-width: 600px) {
+  #nav-ul {
+    flex-direction: column;
+  }
+  #header {
+    height: 204px;
+  }
+  #welcome-section > h1, #projects > h2, #contact > h2 {
+    font-size: 1.5em;
+  }
+  #welcome-section > p, a > p, #contact > p {
+    font-size: 1.1em;
+  }
+}
