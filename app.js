@@ -1,5 +1,12 @@
 const PROJECTS = [
     {
+        name: 'Pomodoro Clock (React)',
+        link: 'https://codepen.io/Radoogle/pen/xxwYrjL?editors=0010',
+        class: 'tiles',
+        imgSrc: 'images/PomodoroClock.jpg',
+        category: ['All', 'React', 'CodePen', 'FCC']
+    },
+    {
         name: 'Calculator (React)',
         link: 'https://codepen.io/Radoogle/pen/mdewwgm?editors=0010',
         class: 'tiles',
