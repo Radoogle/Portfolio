@@ -7,6 +7,13 @@ const PROJECTS = [
         category: ['All', 'React', 'CodePen', 'FCC']
     },
     {
+        name: 'Scatter Plot (D3)',
+        link: 'https://codepen.io/Radoogle/pen/VwvXoqR?editors=0010',
+        class: 'tiles',
+        imgSrc: 'images/D3ScatterPlot.jpg',
+        category: ['All', 'D3', 'CodePen', 'FCC']
+    },
+    {
         name: 'Calculator (React)',
         link: 'https://codepen.io/Radoogle/pen/mdewwgm?editors=0010',
         class: 'tiles',
