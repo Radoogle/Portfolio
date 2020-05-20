@@ -1,4 +1,11 @@
-const PROJECTS = [
+const PROJECTS = [ 
+    {
+        name: 'Choropleth Map (D3)',
+        link: 'https://codepen.io/Radoogle/full/xxwmWoz?',
+        class: 'tiles',
+        imgSrc: 'images/ChoroplethMap.jpg',
+        category: ['All', 'D3', 'CodePen', 'FCC']
+    },
     {
         name: 'Pomodoro Clock (React)',
         link: 'https://codepen.io/Radoogle/pen/xxwYrjL?editors=0010',
