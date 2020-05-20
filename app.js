@@ -7,6 +7,13 @@ const PROJECTS = [
         category: ['All', 'React', 'CodePen', 'FCC']
     },
     {
+        name: 'Heat Map (D3)',
+        link: 'https://codepen.io/Radoogle/pen/mdejBQb?editors=0010',
+        class: 'tiles',
+        imgSrc: 'images/HeatMap.jpg',
+        category: ['All', 'D3', 'CodePen', 'FCC']
+    },
+    {
         name: 'Scatter Plot (D3)',
         link: 'https://codepen.io/Radoogle/pen/VwvXoqR?editors=0010',
         class: 'tiles',
