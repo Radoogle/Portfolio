@@ -1,5 +1,12 @@
 const PROJECTS = [ 
     {
+        name: 'Tree Map (D3)',
+        link: 'https://codepen.io/Radoogle/full/GRpPzVG',
+        class: 'tiles',
+        imgSrc: 'images/D3TreeMap.jpg',
+        category: ['All', 'D3', 'CodePen', 'FCC']
+    },
+    {
         name: 'Choropleth Map (D3)',
         link: 'https://codepen.io/Radoogle/full/xxwmWoz?',
         class: 'tiles',
