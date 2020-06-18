@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -144,7 +145,7 @@ footer > p {
   text-decoration: none;
   color: #ccc;
 }
-.fa-github:before {
+/* .fa-github:before {
     content: "\f09b"; 
 }
 .fa-free-code-camp:before {
@@ -152,7 +153,7 @@ footer > p {
 }
 .fa-linkedin:before {
     content: "\f2c5"; 
-}
+} */
 #contact-links {
   display: flex;
 }
@@ -169,8 +170,16 @@ footer > p {
 
 
 @media (max-width: 600px) {
-  #nav-ul {
+  #nav-ul, #contact-links {
     flex-direction: column;
+  }
+  .contact-me {
+    margin: 20px;
+    padding-top: 15px;
+  }
+  .contact-me:hover {
+    margin: 20px 0 20px 40px;
+    /* padding-left: 15px; */
   }
   #header {
     height: 204px;
