@@ -1,52 +1,59 @@
 const PROJECTS = [ 
     {
+        name: 'Tic Tac Toe',
+        link: 'https://radoogle.github.io/Tic-Tac-Toe/',
+        class: 'tiles',
+        imgSrc: 'images/TicTacToe.jpg',
+        category: ['all', 'game']
+    },
+    {
         name: 'Tree Map (D3)',
         link: 'https://codepen.io/Radoogle/full/GRpPzVG',
         class: 'tiles',
         imgSrc: 'images/D3TreeMap.jpg',
-        category: ['All', 'D3', 'CodePen', 'FCC']
+        category: ['all', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Choropleth Map (D3)',
         link: 'https://codepen.io/Radoogle/full/xxwmWoz?',
         class: 'tiles',
         imgSrc: 'images/ChoroplethMap.jpg',
-        category: ['All', 'D3', 'CodePen', 'FCC']
+        category: ['all', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Pomodoro Clock (React)',
         link: 'https://codepen.io/Radoogle/pen/xxwYrjL?editors=0010',
         class: 'tiles',
         imgSrc: 'images/PomodoroClock.jpg',
-        category: ['All', 'React', 'CodePen', 'FCC']
+        category: ['all', 'React', 'CodePen', 'fcc']
     },
     {
         name: 'Heat Map (D3)',
         link: 'https://codepen.io/Radoogle/pen/mdejBQb?editors=0010',
         class: 'tiles',
         imgSrc: 'images/HeatMap.jpg',
-        category: ['All', 'D3', 'CodePen', 'FCC']
+        category: ['all', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Scatter Plot (D3)',
         link: 'https://codepen.io/Radoogle/pen/VwvXoqR?editors=0010',
         class: 'tiles',
         imgSrc: 'images/D3ScatterPlot.jpg',
-        category: ['All', 'D3', 'CodePen', 'FCC']
+        category: ['all', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Calculator (React)',
         link: 'https://codepen.io/Radoogle/pen/mdewwgm?editors=0010',
         class: 'tiles',
         imgSrc: 'images/Calculator.jpg',
-        category: ['All', 'React', 'CodePen']
+        category: ['all', 'React', 'CodePen']
     },
     {
         name: 'Drum Machine (React)',
         link: 'https://codepen.io/Radoogle/pen/XWmMKLK',
         class: 'tiles',
         imgSrc: 'images/drummachine.jpg',
-        category: ['All', 'React', 'CodePen']
+        category: ['all', 'React', 'CodePen']
         
     },
     {
@@ -54,7 +61,7 @@ const PROJECTS = [
         link: 'https://radoogle.github.io/Memory-Game/',
         class: 'tiles',
         imgSrc: 'images/MemoryGame.jpg',
-        category: ['All']
+        category: ['all', 'game']
         
     },
     {
@@ -62,7 +69,7 @@ const PROJECTS = [
         link: 'https://codepen.io/Radoogle/pen/BaowWqx?editors=0010',
         class: 'tiles',
         imgSrc: 'images/D3BarChart.jpg',
-        category: ['All', 'D3', 'CodePen']
+        category: ['all', 'D3', 'CodePen']
         
     },
     {
@@ -70,7 +77,7 @@ const PROJECTS = [
         link: 'https://codepen.io/Radoogle/pen/GRJvMGy',
         class: 'tiles',
         imgSrc: 'images/tribute.jpg',
-        category: ['All', 'FCC', 'CodePen']
+        category: ['all', 'fcc', 'CodePen']
         
     },
     {
@@ -78,7 +85,7 @@ const PROJECTS = [
         link: 'https://codepen.io/Radoogle/pen/mdJMXMw',
         class: 'tiles',
         imgSrc: 'images/survey.jpg',
-        category: ['All', 'FCC', 'CodePen']
+        category: ['all', 'fcc', 'CodePen']
         
     },
     {
@@ -86,7 +93,7 @@ const PROJECTS = [
         link: 'https://codepen.io/Radoogle/pen/ExjvBZN',
         class: 'tiles',
         imgSrc: 'images/product.jpg',
-        category: ['All', 'FCC', 'CodePen']
+        category: ['All', 'fcc', 'CodePen']
         
     },
     {
@@ -94,7 +101,7 @@ const PROJECTS = [
         link: 'https://codepen.io/Radoogle/pen/yLNzKBW',
         class: 'tiles',
         imgSrc: 'images/documentation.jpg',
-        category: ['All', 'FCC', 'CodePen']
+        category: ['All', 'fcc', 'CodePen']
         
     },
     {
