@@ -1,4 +1,34 @@
+'esversion: 6';
+
 const PROJECTS = [ 
+    {
+        name: 'Chat App Page',
+        link: 'https://radoogle.github.io/chat-app-page/',
+        class: 'tiles',
+        imgSrc: 'images/chatAppPage.jpg',
+        category: ['all', 'codeberry']
+    },
+    {
+        name: 'Sign Up Page',
+        link: 'https://radoogle.github.io/signup-page/',
+        class: 'tiles',
+        imgSrc: 'images/signUpPage.jpg',
+        category: ['all', 'codeberry']
+    },
+    {
+        name: 'Contact Me Page',
+        link: 'https://radoogle.github.io/contact-me-page/',
+        class: 'tiles',
+        imgSrc: 'images/contactMePage.jpg',
+        category: ['all', 'codeberry']
+    },
+    {
+        name: 'Blog Main Page',
+        link: 'https://radoogle.github.io/blog-main-page/',
+        class: 'tiles',
+        imgSrc: 'images/blogPage.jpg',
+        category: ['all', 'codeberry']
+    },
     {
         name: 'Tic Tac Toe',
         link: 'https://radoogle.github.io/Tic-Tac-Toe/',
