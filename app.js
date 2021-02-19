@@ -2,6 +2,13 @@
 
 const PROJECTS = [ 
     {
+        name: 'eCommerce Website',
+        link: 'https://radoogle.github.io/redStore/',
+        class: 'tiles',
+        imgSrc: 'images/eCommerce.jpg',
+        category: ['all']
+    },
+    {
         name: 'Chat App Page',
         link: 'https://radoogle.github.io/chat-app/',
         class: 'tiles',
@@ -159,6 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
         a.setAttribute('class', obj.class);
         a.setAttribute('href', obj.link);
         a.setAttribute('target', '_blank');
+        a.setAttribute('loading', 'lazy');
         
         let img = document.createElement('img');
         img.setAttribute('src', obj.imgSrc);
