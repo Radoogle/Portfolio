@@ -5,7 +5,7 @@ const PROJECTS = [
         name: 'Chat App Page',
         link: 'https://radoogle.github.io/chat-app/',
         class: 'tiles',
-        imgSrc: 'images/chatApp.jpg',
+        imgSrc: 'images/chatAppPage.jpg',
         category: ['all', 'codeberry']
     },
     {
