@@ -179,4 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
         a.append(p);
         container.append(a);
     })
+
+    const footerYear = document.getElementById("footerYear");
+    footerYear.innerHTML = new Date().getFullYear();
 });
