@@ -4,131 +4,131 @@ const PROJECTS = [
     {
         name: 'eCommerce Website',
         link: 'https://radoogle.github.io/redStore/',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/eCommerce.jpg',
-        category: ['all']
+        category: ['All']
     },
     {
         name: 'Chat App Page',
         link: 'https://radoogle.github.io/chat-app/',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/chatAppPage.jpg',
-        category: ['all', 'codeberry']
+        category: ['All', 'codeberry']
     },
     {
         name: 'Sign Up Page',
         link: 'https://radoogle.github.io/signup-page/',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/signUpPage.jpg',
-        category: ['all', 'codeberry']
+        category: ['All', 'codeberry']
     },
     {
         name: 'Contact Me Page',
         link: 'https://radoogle.github.io/contact-me-page/',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/contactMePage.jpg',
-        category: ['all', 'codeberry']
+        category: ['All', 'codeberry']
     },
     {
         name: 'Blog Main Page',
         link: 'https://radoogle.github.io/blog-main-page/',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/blogPage.jpg',
-        category: ['all', 'codeberry']
+        category: ['All', 'codeberry']
     },
     {
         name: 'Tic Tac Toe',
         link: 'https://radoogle.github.io/Tic-Tac-Toe/',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/TicTacToe.jpg',
-        category: ['all', 'game']
+        category: ['All', 'game']
     },
     {
         name: 'Tree Map (D3)',
         link: 'https://codepen.io/Radoogle/full/GRpPzVG',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/D3TreeMap.jpg',
-        category: ['all', 'D3', 'CodePen', 'fcc']
+        category: ['All', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Choropleth Map (D3)',
         link: 'https://codepen.io/Radoogle/full/xxwmWoz?',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/ChoroplethMap.jpg',
-        category: ['all', 'D3', 'CodePen', 'fcc']
+        category: ['All', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Pomodoro Clock (React)',
         link: 'https://codepen.io/Radoogle/pen/xxwYrjL?editors=0010',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/PomodoroClock.jpg',
-        category: ['all', 'React', 'CodePen', 'fcc']
+        category: ['All', 'React', 'CodePen', 'fcc']
     },
     {
         name: 'Heat Map (D3)',
         link: 'https://codepen.io/Radoogle/pen/mdejBQb?editors=0010',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/HeatMap.jpg',
-        category: ['all', 'D3', 'CodePen', 'fcc']
+        category: ['All', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Scatter Plot (D3)',
         link: 'https://codepen.io/Radoogle/pen/VwvXoqR?editors=0010',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/D3ScatterPlot.jpg',
-        category: ['all', 'D3', 'CodePen', 'fcc']
+        category: ['All', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Calculator (React)',
         link: 'https://codepen.io/Radoogle/pen/mdewwgm?editors=0010',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/Calculator.jpg',
-        category: ['all', 'React', 'CodePen']
+        category: ['All', 'React', 'CodePen']
     },
     {
         name: 'Drum Machine (React)',
         link: 'https://codepen.io/Radoogle/pen/XWmMKLK',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/drummachine.jpg',
-        category: ['all', 'React', 'CodePen']
+        category: ['All', 'React', 'CodePen']
         
     },
     {
         name: 'Memory Game',
         link: 'https://radoogle.github.io/Memory-Game/',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/MemoryGame.jpg',
-        category: ['all', 'game']
+        category: ['All', 'game']
         
     },
     {
         name: 'Bar Chart (D3)',
         link: 'https://codepen.io/Radoogle/pen/BaowWqx?editors=0010',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/D3BarChart.jpg',
-        category: ['all', 'D3', 'CodePen']
+        category: ['All', 'D3', 'CodePen']
         
     },
     {
         name: 'Tribute Page',
         link: 'https://codepen.io/Radoogle/pen/GRJvMGy',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/tribute.jpg',
-        category: ['all', 'fcc', 'CodePen']
+        category: ['All', 'fcc', 'CodePen']
         
     },
     {
         name: 'Survey Form',
         link: 'https://codepen.io/Radoogle/pen/mdJMXMw',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/survey.jpg',
-        category: ['all', 'fcc', 'CodePen']
+        category: ['All', 'fcc', 'CodePen']
         
     },
     {
         name: 'Product Landing Page',
         link: 'https://codepen.io/Radoogle/pen/ExjvBZN',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/product.jpg',
         category: ['All', 'fcc', 'CodePen']
         
@@ -136,7 +136,7 @@ const PROJECTS = [
     {
         name: 'Technical Documentation Page',
         link: 'https://codepen.io/Radoogle/pen/yLNzKBW',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/documentation.jpg',
         category: ['All', 'fcc', 'CodePen']
         
@@ -144,7 +144,7 @@ const PROJECTS = [
     {
         name: 'Countdown Timer',
         link: 'https://radoogle.github.io/Countdown-timer/',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/countdown.jpg',
         category: ['All', 'github']
         
@@ -152,33 +152,62 @@ const PROJECTS = [
     {
         name: 'Image Manipulation',
         link: 'https://radoogle.github.io/ImageManipulation/',
-        class: 'tiles',
+        className: 'tiles',
         imgSrc: 'images/manipulation.jpg',
         category: ['All', 'github']
         
     },
 ];
 
+const displayProjects = (projects, filterValue) => {
+  let result = "";
+  
+  projects.forEach( ({name, link, className, imgSrc, category}) => {
+    if (category.includes(filterValue)) {
+      result += `
+        <a href="${link}" class="${className}" target="_blank">
+          <img src="${imgSrc}" alt="${name}">
+          <p><span class="code">&lt;</span>${name}<span class="code">/&gt;</span></p>
+        </a>
+      `;
+    }
+  });
+  document.getElementById('project-tile').innerHTML = result;
+};
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    const container = document.getElementById('project-tile');
-    PROJECTS.map( (obj) => {
-        let a = document.createElement('a');
-        a.setAttribute('class', obj.class);
-        a.setAttribute('href', obj.link);
-        a.setAttribute('target', '_blank');
-        a.setAttribute('loading', 'lazy');
-        
-        let img = document.createElement('img');
-        img.setAttribute('src', obj.imgSrc);
-        img.setAttribute('alt', obj.name);
-        
-        let p = document.createElement('p');
-        p.innerHTML = `<span class="code">&lt; </span>${obj.name}<span class="code"> /&gt;</span>`;
-        
-        a.append(img);
-        a.append(p);
-        container.append(a);
-    })
+    //const container = document.getElementById('project-tile');
+    const filter = document.getElementById("filter");
+
+    // first display all project, category === "All"
+    displayProjects(PROJECTS, "All"); 
+
+    // building the filter list options from the category in PROJECTS
+    
+      // 1. build an array with distinct category values
+      let selectFilterValues = [];
+      PROJECTS.forEach( ({category}) => {
+        for (let cat of category) {
+          if (!selectFilterValues.includes(cat)) {
+            selectFilterValues.push(cat);
+          }
+        }
+      });
+
+      // 2. add the values from selectFilterValues to the dropdownlist
+      let resultList = "";
+      selectFilterValues.forEach( (value) => {
+        resultList += `
+          <option value="${value}">${value}</option>
+        `;
+      });
+      filter.innerHTML = resultList;
+      
+    // every change in filter list will refresh the list of tiles.
+    filter.addEventListener("change", () => {
+      displayProjects(PROJECTS, filter.value);
+    });
 
     const footerYear = document.getElementById("footerYear");
     footerYear.innerHTML = new Date().getFullYear();

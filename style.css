@@ -72,6 +72,11 @@
   margin: 10px 70px;
   text-align: center;
 }
+
+.filter-container {
+  text-align: center;
+}
+
 .project-tile {
   margin: 50px auto;
   display: grid;
@@ -84,11 +89,15 @@
   color: #CCC;
   background-color: rgb(85, 85, 85);
   border-radius: 15px;
-  padding: 5px;
-  /* box-shadow: 0 0 20px 0px rgba(0,0,0,0.2); */
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  cursor: pointer;
+  padding: 10px;
 }
+
+.tiles:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+  transition: all 0.5s;
+}
+
 a > img {
   width: 100%;
   height: calc(100% - 6.8rem);
@@ -158,19 +167,30 @@ footer > p {
   color: #ccc;
   margin: 20px;
   font-size: 1.4em;
+  padding: 5px 5px 0 5px;
 }
 .contact-me:hover {
   margin-bottom: 0px;
   color: rgba(237, 56, 43, 1);
   transform: translateY(-5px);
+  box-shadow: 7px 7px 5px 5px rgba(0,0,0,0.75);
   transition: all 0.5s;
 }
 
 
 @media (max-width: 600px) {
-  #nav-ul, #contact-links {
+  #nav-ul, 
+  #contact-links {
     flex-direction: column;
   }
+
+  .nav-ul-li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   .contact-me {
     margin: 20px;
     padding-top: 15px;
@@ -181,7 +201,9 @@ footer > p {
   #header {
     height: 204px;
   }
-  #welcome-section > h1, #projects > h2, #contact > h2 {
+  #welcome-section > h1, 
+  #projects > h2, 
+  #contact > h2 {
     font-size: 1.5em;
   }
   #welcome-section > p, 
