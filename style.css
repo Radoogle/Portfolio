@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 #header {
@@ -67,7 +68,7 @@
   padding: 100px 5px;
 }
 #projects > h2 {
-  font-size: 2.6em;
+  font-size: 2.6rem;
   color: #ccc;
   margin: 10px 70px;
   text-align: center;
@@ -131,7 +132,7 @@ a > p {
   height: 80vh;
 }
 #contact > h2 {
-  font-size: 3.5em;
+  font-size: 2.6rem;
   color: #ccc;
 }
 #contact > p {
@@ -148,22 +149,13 @@ footer {
   place-items: center;
 }
 footer > p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #ccc;
 }
 #fcc {
   text-decoration: none;
   color: #ccc;
 }
-/* .fa-github:before {
-    content: "\f09b"; 
-}
-.fa-free-code-camp:before {
-    content: "\f2c5"; 
-}
-.fa-linkedin:before {
-    content: "\f2c5"; 
-} */
 #contact-links {
   display: flex;
 }
@@ -171,11 +163,10 @@ footer > p {
   text-decoration: none;
   color: #ccc;
   margin: 20px;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   padding: 5px 5px 0 5px;
 }
 .contact-me:hover {
-  margin-bottom: 0px;
   color: rgba(237, 56, 43, 1);
   transform: translateY(-5px);
   box-shadow: 7px 7px 5px 5px rgba(0,0,0,0.75);
@@ -227,8 +218,6 @@ footer > p {
     }
   }
 
-
-
 #scrollTop {
   display: none;
   position: fixed;
@@ -254,9 +243,14 @@ footer > p {
 }
 
 
-@media (max-width: 600px) {
-  #nav-ul, 
+@media only screen and (max-width: 800px) {
   #contact-links {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-ul {
     flex-direction: column;
   }
 
@@ -266,21 +260,13 @@ footer > p {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
-  .contact-me {
-    margin: 20px;
-    padding-top: 15px;
-  }
-  .contact-me:hover {
-    margin: 20px 0 20px 40px;
-  }
   #header {
     height: 204px;
   }
   #welcome-section > h1, 
   #projects > h2, 
   #contact > h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
   #welcome-section > p, 
   a > p, 
