@@ -75,7 +75,12 @@
 
 .filter-container {
   text-align: center;
+  color: #ccc;
 }
+
+  .filter {
+    background: #ccc;
+  }
 
 .project-tile {
   margin: 50px auto;
