@@ -51,6 +51,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 #welcome-section > h1 {
   font-size: 3.5rem;
@@ -181,6 +182,20 @@ footer > p {
   transition: all 0.5s;
 }
 
+#scrollDown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 #scrollTop {
   display: none;
   position: fixed;
@@ -197,9 +212,12 @@ footer > p {
   border-radius: 5px;
 }
 
-#scrollTop:hover {
+#scrollTop:hover,
+#scrollDown:hover {
   background-color: #ddd;
   color: red;
+  box-shadow: 7px 7px 5px 5px rgba(0,0,0,0.75);
+  transition: all 0.5s;
 }
 
 

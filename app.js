@@ -175,8 +175,9 @@ const displayProjects = (projects, filterValue) => {
   document.getElementById('project-tile').innerHTML = result;
 };
 
-//Get the button
+//Get the button for scrolling to the top
 var scrollTop = document.getElementById("scrollTop");
+var scrollDown = document.getElementById("scrollDown");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -184,15 +185,23 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     scrollTop.style.display = "block";
+    scrollDown.style.display = "none";
   } else {
     scrollTop.style.display = "none";
+    scrollDown.style.display = "block";
   }
 }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+function scrollToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+function scrollDownFunction() {
+  // document.body.scrollHeight = 100;
+  // document.documentElement.scrollHeight = 100;
+  window.scrollTo(0,document.querySelector("#welcome-section").scrollHeight + 75);
 }
 
 
