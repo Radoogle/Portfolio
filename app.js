@@ -199,8 +199,7 @@ function scrollToTop() {
 }
 
 function scrollDownFunction() {
-  // document.body.scrollHeight = 100;
-  // document.documentElement.scrollHeight = 100;
+  // + 75px because the nav bar has 75px
   window.scrollTo(0,document.querySelector("#welcome-section").scrollHeight + 75);
 }
 
