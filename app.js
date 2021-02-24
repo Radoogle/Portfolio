@@ -175,9 +175,28 @@ const displayProjects = (projects, filterValue) => {
   document.getElementById('project-tile').innerHTML = result;
 };
 
+//Get the button
+var scrollTop = document.getElementById("scrollTop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTop.style.display = "block";
+  } else {
+    scrollTop.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 
 document.addEventListener('DOMContentLoaded', function() {
-    //const container = document.getElementById('project-tile');
     const filter = document.getElementById("filter");
 
     // first display all project, category === "All"
