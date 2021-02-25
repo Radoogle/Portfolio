@@ -179,13 +179,13 @@ footer > p {
   left: 50%;
   transform: translateX(-50%);
   outline: none;
-  background-color: red;
+  background-color: rgba(112,112,112,.7);
   color: white;
   cursor: pointer;
   padding: 10px;
   width: 50px;
 	height: 90px;
-	border: 3px solid #333;
+	border: 3px solid red;
 	border-radius: 60px;
 }
 
