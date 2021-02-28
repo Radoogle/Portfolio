@@ -63,20 +63,35 @@
 
     <section id="contact" loading="lazy">
       <h1>Open for collaboration</h1>
-      <h2>Feel free to contact me</h2>        
-      <div id="contact-links">
-        <a class="contact-me" href="https://github.com/Radoogle" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a class="contact-me" href="https://www.freecodecamp.org/radoogle" target="_blank"><i class="fab fa-free-code-camp"></i> freeCodeCamp</a>
-        <a class="contact-me" href="https://www.linkedin.com/in/radu-harangus-41580938/" target="_blank"><i class="fab fa-linkedin-in"></i> Linkedin</a>
-        <a class="contact-me" href="https://codepen.io/dashboard?type=VIEW&opts_itemType=PEN&opts_searchTerm=null&opts_order=RELEVANCE&opts_depth=EVERYTHING&opts_showForks=false&opts_filter=all&opts_orderBy=ID&opts_orderDirection=0&opts_tag=null&displayType=GRID&previewType=IFRAME&activeType=PEN" target="_blank"><i class="fab fa-codepen"></i> CodePen</a>
-        <a class="contact-me" href="https://glitch.com/dashboard?group=active&sortColumn=boost&sortDirection=DESC&page=1&showAll=false&filterDomain=" target="_blank"><i class="fas fa-fish"></i> Glitch</a>
+      <h2>Feel free to contact me</h2>
+      <div class="row">
+        <div class="col-2 contact-links-container">
+          <h4>Connect with me</h4>
+          <a class="contact-me icon" href="https://www.linkedin.com/in/radu-harangus-41580938/" target="_blank" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <h4>Look me up on</h4>
+          <a class="contact-me icon" href="https://github.com/Radoogle" target="_blank" title="github"><i class="fab fa-github"></i></a>
+          <h4>Find me in</h4>
+          <a class="contact-me icon" href="https://goo.gl/maps/Mt5HArLBjYH2geNc8" target="_blank" title="Cluj-Napoca"><i class="fas fa-map-marker-alt"></i></a>
+          <h4>Or reach me by</h4>
+          <a class="contact-me icon" href="tel:+40730634381" target="_blank" title="phone"><i class="fas fa-phone"></i></a>
+        </div>
+        <div class="col-2 form-container">
+          <h4>Send a message:</h4>
+          <form action="" class="contact-form__input-fields">
+            <input type="text" id="name" name="name" placeholder="Your name" class="contact-form__input-field">
+            <input type="email" id="email" name="email" placeholder="Email" class="contact-form__input-field">
+            <textarea id="message" name="message" placeholder="Enter your message..." class="contact-form__input-field contact-form__input-field--textarea"></textarea>
+            <input type="submit" value="submit" class="contact-form__submit">
+          </form>
+
+        </div>
       </div>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; Radu Harangus <span id="footerYear">2020</span></p>
+    <small>&copy;<a class="footer-text" href="https://www.linkedin.com/in/radu-harangus-41580938/" target="_blank">Radu Harangus</a> <span id="footerYear">2021</span></small>
   </footer>
 
   <button onclick="scrollToTop()" id="scrollTop" title="Go to top"></button>
