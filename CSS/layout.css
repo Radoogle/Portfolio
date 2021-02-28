@@ -24,11 +24,33 @@
   #GRID
 \*------------------------------------*/
 
-body {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: var(--bg-header);
+  border-bottom: 1px solid black;
+  z-index: 1;
 }
 
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+#main {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+}
+#welcome-section {
+  height: calc(100vh - 75px);
+  background: linear-gradient(165deg, var(--gradient1) 0%, var(--gradient2) 50%, var(--gradient1) 100%);
+}
 
 
 
@@ -37,23 +59,28 @@ body {
   #FLEXBOX
 \*------------------------------------*/
 
-.flex-container           { display: flex; }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+}
 
-.flex-row                 { flex-direction: row; }
-.flex-col                 { flex-direction: column; }
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
 
-.flex-end {
-  align-items: flex-end;
-  justify-content: flex-end;
- }
+.welcome-text {
+  margin-top: 25vh;
+}
 
- .flex-start              { align-items: flex-start; }
-
-.header__content          { justify-content: space-between; }
-
-.header__logo             { align-self: center; }
-
-
+.flex-col {
+  flex-direction: column;
+}
 
 
 
@@ -61,16 +88,7 @@ body {
   #FLOATS
 \*------------------------------------*/
 
-.float-left   { float: left; }
 
-.float-right  { float: right; }
-
-.float-left::after,
-.float-right::after {
-  content:  "";
-  display:  table;
-  clear:    both;
-}
 
 
 
@@ -80,11 +98,7 @@ body {
   #HELPERS
 \*------------------------------------*/
 
-.clearfix::after {
-  content:  "";
-  display:  table;
-  clear:    both;
-}
+
 
 
 
@@ -94,17 +108,3 @@ body {
   #ELEMENTS
 \*------------------------------------*/
 
-.layout__item--full-width { width: 100%; }
-
-.right { 
-  position: relative;
-  height: 100vh;
-}
-
-.compose { 
-  position: absolute;
-  right: 0;
-  bottom: 0; 
-  width: 100%;
-  height: 14rem;
-}

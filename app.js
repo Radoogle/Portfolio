@@ -5,91 +5,91 @@ const PROJECTS = [
         name: 'eCommerce Website',
         link: 'https://radoogle.github.io/redStore/',
         className: 'tiles',
-        imgSrc: 'images/eCommerce.jpg',
+        imgSrc: 'images/project-thumbnails/eCommerce.jpg',
         category: ['All']
     },
     {
         name: 'Chat App Page',
         link: 'https://radoogle.github.io/chat-app/',
         className: 'tiles',
-        imgSrc: 'images/chatAppPage.jpg',
+        imgSrc: 'images/project-thumbnails/chatAppPage.jpg',
         category: ['All', 'codeberry']
     },
     {
         name: 'Sign Up Page',
         link: 'https://radoogle.github.io/signup-page/',
         className: 'tiles',
-        imgSrc: 'images/signUpPage.jpg',
+        imgSrc: 'images/project-thumbnails/signUpPage.jpg',
         category: ['All', 'codeberry']
     },
     {
         name: 'Contact Me Page',
         link: 'https://radoogle.github.io/contact-me-page/',
         className: 'tiles',
-        imgSrc: 'images/contactMePage.jpg',
+        imgSrc: 'images/project-thumbnails/contactMePage.jpg',
         category: ['All', 'codeberry']
     },
     {
         name: 'Blog Main Page',
         link: 'https://radoogle.github.io/blog-main-page/',
         className: 'tiles',
-        imgSrc: 'images/blogPage.jpg',
+        imgSrc: 'images/project-thumbnails/blogPage.jpg',
         category: ['All', 'codeberry']
     },
     {
         name: 'Tic Tac Toe',
         link: 'https://radoogle.github.io/Tic-Tac-Toe/',
         className: 'tiles',
-        imgSrc: 'images/TicTacToe.jpg',
+        imgSrc: 'images/project-thumbnails/TicTacToe.jpg',
         category: ['All', 'game']
     },
     {
         name: 'Tree Map (D3)',
         link: 'https://codepen.io/Radoogle/full/GRpPzVG',
         className: 'tiles',
-        imgSrc: 'images/D3TreeMap.jpg',
+        imgSrc: 'images/project-thumbnails/D3TreeMap.jpg',
         category: ['All', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Choropleth Map (D3)',
         link: 'https://codepen.io/Radoogle/full/xxwmWoz?',
         className: 'tiles',
-        imgSrc: 'images/ChoroplethMap.jpg',
+        imgSrc: 'images/project-thumbnails/ChoroplethMap.jpg',
         category: ['All', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Pomodoro Clock (React)',
         link: 'https://codepen.io/Radoogle/pen/xxwYrjL?editors=0010',
         className: 'tiles',
-        imgSrc: 'images/PomodoroClock.jpg',
+        imgSrc: 'images/project-thumbnails/PomodoroClock.jpg',
         category: ['All', 'React', 'CodePen', 'fcc']
     },
     {
         name: 'Heat Map (D3)',
         link: 'https://codepen.io/Radoogle/pen/mdejBQb?editors=0010',
         className: 'tiles',
-        imgSrc: 'images/HeatMap.jpg',
+        imgSrc: 'images/project-thumbnails/HeatMap.jpg',
         category: ['All', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Scatter Plot (D3)',
         link: 'https://codepen.io/Radoogle/pen/VwvXoqR?editors=0010',
         className: 'tiles',
-        imgSrc: 'images/D3ScatterPlot.jpg',
+        imgSrc: 'images/project-thumbnails/D3ScatterPlot.jpg',
         category: ['All', 'D3', 'CodePen', 'fcc']
     },
     {
         name: 'Calculator (React)',
         link: 'https://codepen.io/Radoogle/pen/mdewwgm?editors=0010',
         className: 'tiles',
-        imgSrc: 'images/Calculator.jpg',
+        imgSrc: 'images/project-thumbnails/Calculator.jpg',
         category: ['All', 'React', 'CodePen']
     },
     {
         name: 'Drum Machine (React)',
         link: 'https://codepen.io/Radoogle/pen/XWmMKLK',
         className: 'tiles',
-        imgSrc: 'images/drummachine.jpg',
+        imgSrc: 'images/project-thumbnails/drummachine.jpg',
         category: ['All', 'React', 'CodePen']
         
     },
@@ -97,7 +97,7 @@ const PROJECTS = [
         name: 'Memory Game',
         link: 'https://radoogle.github.io/Memory-Game/',
         className: 'tiles',
-        imgSrc: 'images/MemoryGame.jpg',
+        imgSrc: 'images/project-thumbnails/MemoryGame.jpg',
         category: ['All', 'game']
         
     },
@@ -105,7 +105,7 @@ const PROJECTS = [
         name: 'Bar Chart (D3)',
         link: 'https://codepen.io/Radoogle/pen/BaowWqx?editors=0010',
         className: 'tiles',
-        imgSrc: 'images/D3BarChart.jpg',
+        imgSrc: 'images/project-thumbnails/D3BarChart.jpg',
         category: ['All', 'D3', 'CodePen']
         
     },
@@ -113,7 +113,7 @@ const PROJECTS = [
         name: 'Tribute Page',
         link: 'https://codepen.io/Radoogle/pen/GRJvMGy',
         className: 'tiles',
-        imgSrc: 'images/tribute.jpg',
+        imgSrc: 'images/project-thumbnails/tribute.jpg',
         category: ['All', 'fcc', 'CodePen']
         
     },
@@ -121,7 +121,7 @@ const PROJECTS = [
         name: 'Survey Form',
         link: 'https://codepen.io/Radoogle/pen/mdJMXMw',
         className: 'tiles',
-        imgSrc: 'images/survey.jpg',
+        imgSrc: 'images/project-thumbnails/survey.jpg',
         category: ['All', 'fcc', 'CodePen']
         
     },
@@ -129,7 +129,7 @@ const PROJECTS = [
         name: 'Product Landing Page',
         link: 'https://codepen.io/Radoogle/pen/ExjvBZN',
         className: 'tiles',
-        imgSrc: 'images/product.jpg',
+        imgSrc: 'images/project-thumbnails/product.jpg',
         category: ['All', 'fcc', 'CodePen']
         
     },
@@ -137,7 +137,7 @@ const PROJECTS = [
         name: 'Technical Documentation Page',
         link: 'https://codepen.io/Radoogle/pen/yLNzKBW',
         className: 'tiles',
-        imgSrc: 'images/documentation.jpg',
+        imgSrc: 'images/project-thumbnails/documentation.jpg',
         category: ['All', 'fcc', 'CodePen']
         
     },
@@ -145,7 +145,7 @@ const PROJECTS = [
         name: 'Countdown Timer',
         link: 'https://radoogle.github.io/Countdown-timer/',
         className: 'tiles',
-        imgSrc: 'images/countdown.jpg',
+        imgSrc: 'images/project-thumbnails/countdown.jpg',
         category: ['All', 'github']
         
     },
@@ -153,7 +153,7 @@ const PROJECTS = [
         name: 'Image Manipulation',
         link: 'https://radoogle.github.io/ImageManipulation/',
         className: 'tiles',
-        imgSrc: 'images/manipulation.jpg',
+        imgSrc: 'images/project-thumbnails/manipulation.jpg',
         category: ['All', 'github']
         
     },
