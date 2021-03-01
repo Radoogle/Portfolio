@@ -1,16 +1,21 @@
 <?php
 
+  $to  = 'radu.harangus@gmail.com';
   $name = $_POST['name'];
   $visitor_email = $_POST['email'];
   $message = $_POST['message'];
   $email_subject = "email sent from the contact page (portfolio)";
 
+  $email_body = "You have received a new message. ".
+                " Here are the details:\n Name: $name \n ".
+                "Email: $email_address\n Message \n $message";
+
+
+  echo '<script>alert("Welcome to Geeks for Geeks")</script>'; 
+  
+
 if ($_POST["message"]) {
-    mail("radu.harangus@gmail.com", "$email_subject",
-
-    $_POST["You have received a new message from the user $name.\n".
-    "Here is the message:\n $message."]. "From: $visitor_email");
-
+    mail($to, $email_subject, $email_body. "From: $visitor_email");
 }
 
 ?>
