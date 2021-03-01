@@ -14,15 +14,12 @@
  * CONTENTS
  *
  * SETTINGS
- * Variables............Globally-available variables.
- * Box-sizing...........Better default `box-sizing`.
- * Base font sizes......Setting the base font size.
- * Margins..............Top and bottom margins global values.
- * Anchors..............Implicit link settings.
+ * Variables...............Globally-available variables.
+ * GENERAL.................Better default `box-sizing`, scroll behaviour, margins and paddings.
+ * Base styles & fonts.....Setting the base font size.
+ * Margins.................Top and bottom margins global values.
+ * Anchors.................Implicit link settings.
  *
- * BASE STYLES
- * Headings.............H2, H6 styles.
- * Paragraphs...........Base styles.
  */
 
 
@@ -41,23 +38,24 @@
 \*------------------------------------*/
 
 :root {
-  --bg-primary:           rgb(85, 85, 85); /* [1] */ 
+  /* background */
+  --bg-primary:           rgb(85, 85, 85); 
   --bg-secondary:         #ccc;
   --bg-third:             rgba(112,112,112,.7);
-  
+  /* gradient */
   --gradient1:            rgba(25,25,25,1);
   --gradient2:            rgba(112,112,112,1);
-
+  /* header and footer */
   --bg-header:            rgba(237,56,43,.9);
   --bg-footer:            rgb(105, 105, 105);
-
+  /* border */
   --border-color:         rgba(237,56,43,.9);
   --border-color2:        #ccc;
-
+  /* fonts */
   --font-color1:          rgba(25,25,25,1);
   --font-color2:          #ccc;
   --font-color3:          rgba(237,56,43,.9);
-
+  /* heights for navbar and footer */
   --navbar-height:        7.5rem;
   --footer-height:        7.5rem;
 }
@@ -67,12 +65,14 @@
 
 
 /*------------------------------------*\
-  #BOX-SIZING & SCROLL
+  #GENERAL
 \*------------------------------------*/
 
 * { 
 box-sizing:       border-box; 
 scroll-behavior:  smooth; 
+margin:           0;
+padding:          0;
 }
 
 
@@ -80,27 +80,10 @@ scroll-behavior:  smooth;
 
 
 /*------------------------------------*\
-  #FONT SIZES
+  #BASE STYLES & FONT SIZES
 \*------------------------------------*/
 
 html { font-size: 10px; } /* reference font size for REM units */
-
-h1   { font-size: 5rem; }
-
-h2   { font-size: 3.5rem; }
-
-h3,
-h4,
-p    { font-size: 2rem; }
-
-
-
-
-
-
-/*------------------------------------*\
-  #BASE STYLES
-\*------------------------------------*/
 
 body {
   font-family:      'Roboto Mono', monospace;
@@ -108,57 +91,46 @@ body {
   background-color: var(--bg-secondary);
 }
 
+h1 { 
+  font-size:    5rem;
+  font-weight:  bold;
+}
+
+h2 { font-size: 3.5rem; }
+
+h3,
+h4,
+p  { font-size: 2rem; }
+
+p  { font-weight: 200; }
+
 
 
 
 
 /*------------------------------------*\
-  #HEADINGS & PARAGRAPHS
+  #MARGINS & PADDINGS
 \*------------------------------------*/
 
 h1, 
 h2, 
 h3, 
 h4, 
-p   { text-align: center; }
+p  { text-align: center; }
 
 
-h1 { font-weight: bold; }
-
-
-p {
-  font-weight:  200;
-  padding:      15px 0;
-}
-
-
-
-
-
-/*------------------------------------*\
-  #MARGINS
-\*------------------------------------*/
 
 h1 { margin-top: 7rem; } 
 
-h4 { margin: 0;
-     margin-bottom: 2rem; }
+h4 { margin-bottom: 2rem; }
 
-/* h2 { margin: 0; } */
+p  { padding: 15px 0; }
 
-.main {
-  margin-top: 75px;
-}
+.main { margin-top: var(--navbar-height); }
 
 .row { margin: 0 auto; }
 
-.welcome-text {
-  margin-top: 25vh;
-}
-
-
-
-
+.welcome-text { margin-top: 25vh; }
 
 
 
@@ -171,18 +143,4 @@ h4 { margin: 0;
 a { 
   text-decoration: none;
   cursor:          pointer;
- }
-
-
-
-
-
- /*------------------------------------*\
-  #LISTS & LIST ITEMS
-\*------------------------------------*/
-
- ul,
- li {
-  display:         inline-block;
-  list-style-type: none;
  }

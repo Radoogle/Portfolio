@@ -11,8 +11,6 @@
  * LAYOUT
  * Grid.................Rules for the grid container.
  * Flexbox..............Rules for the flexbox container and items.
- * Floats...............Rules for the floats items.
- * Elements.............Rules for the other containers and items.
  *
  */
 
@@ -24,6 +22,22 @@
   #GRID
 \*------------------------------------*/
 
+.project-tile {
+  display:                grid;
+  grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap:               2rem;
+}
+
+footer { display: grid; }
+
+
+
+
+
+/*------------------------------------*\
+  #FLEXBOX
+\*------------------------------------*/
+
 .navbar {
   position: fixed;
   top:      0;
@@ -33,30 +47,9 @@
 
 .main { display: flex; }
 
-.project-tile {
-  display:                grid;
-  grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap:               2rem;
-}
-
-
-
-/*------------------------------------*\
-  #FLEXBOX
-\*------------------------------------*/
-
 .row {
   position: relative;
-  display: flex;
+  display:  flex;
 }
 
 .flex-col { flex-direction: column; }
-
-
-
-
-
-/*------------------------------------*\
-  #ELEMENTS
-\*------------------------------------*/
-
