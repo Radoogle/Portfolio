@@ -41,7 +41,7 @@ function scrollToTop() {
 
 function scrollDownFunction() {
   // + 75px because the nav bar has 75px
-  window.scrollTo(0,document.querySelector("#welcome-section").scrollHeight + 75);
+  window.scrollTo(0,document.querySelector("#welcomeSection").scrollHeight + 75);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
