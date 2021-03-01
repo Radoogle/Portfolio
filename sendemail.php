@@ -11,8 +11,6 @@
                     Email: $visitor_email \n 
                     Message: \n 
                     $message";
-
-  echo '<script>alert("Welcome to Geeks for Geeks")</script>'; 
   
   mail($to, $email_subject, $email_body);
 
