@@ -68,18 +68,21 @@ nav ul li {
   position: absolute;
   margin-top: 15rem;
   margin-left: 5rem;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  opacity: .65;
-  cursor: pointer;
-  animation: border-shape 5s 2;
 }
 
-  .self-image:hover {
+.border-animation {
+  cursor: pointer;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  opacity: .65;
+  animation: border-shape 5s 2;
+  
+}
+
+  .border-animation:hover {
     opacity: 1;
     animation: border-shape 5s infinite;
-    transition: all .5s;
+    transition: opacity 1.5s;
   }
-
 
 
 

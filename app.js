@@ -204,9 +204,6 @@ function scrollDownFunction() {
 }
 
 
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const filter = document.getElementById("filter");
 
