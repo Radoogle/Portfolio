@@ -6,7 +6,7 @@ const displayProjects = (projects, filterValue) => {
   projects.forEach( ({name, link, className, imgSrc, category}) => {
     if (category.includes(filterValue)) {
       result += `
-        <a href="${link}" class="${className}" target="_blank">
+        <a href="${link}" class="${className} shadow" target="_blank">
           <img src="${imgSrc}" alt="${name}">
           <p><span class="code">&lt;</span>${name}<span class="code">/&gt;</span></p>
         </a>

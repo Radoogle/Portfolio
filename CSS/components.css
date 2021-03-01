@@ -158,10 +158,9 @@ p {
   padding:          1rem;
 }
   
-  .tiles:hover {
+  a.tiles:hover { 
     transform:  translateY(-5px);
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
-    transition: all 0.5s;
+    transition: transform .5s;
   }
   
 img {
@@ -195,9 +194,9 @@ img {
 
 .contact-links-container,
 .form-container {
-  display: flex;
-  align-items: center;
-  justify-items: center;
+  display:        flex;
+  align-items:    center;
+  justify-items:  center;
 }
 
 form { width: 70%; }
@@ -217,16 +216,13 @@ form { width: 70%; }
     outline:          none;
   }
 
-    .contact-form__input-field:focus { 
-      border-bottom-color: var(--border-color);
-      box-shadow: 7px 7px 5px 5px rgba(0,0,0,0.75);
-      transition: all 0.5s;
-    }
+  .shadow:focus,
+  .shadow:hover {
+    box-shadow: 7px 7px 5px 5px rgba(0,0,0,0.75);
+    transition: box-shadow .5s;
+  }
 
-    .contact-form__input-field:hover {
-      box-shadow: 7px 7px 5px 5px rgba(0,0,0,0.75);
-      transition: all 0.5s;
-    }
+    .contact-form__input-field:focus { border-bottom-color: var(--border-color); }
 
     .contact-form__input-field::placeholder {
       font-weight:    bold;
@@ -256,8 +252,7 @@ form { width: 70%; }
   .contact-form__submit:hover {
     background-color: var(--bg-secondary);
     color: var(--border-color);
-    box-shadow: 7px 7px 5px 5px rgba(0,0,0,0.75);
-    transition: all 0.5s;
+    transition: all .5s;
   }
 
 
@@ -270,16 +265,17 @@ form { width: 70%; }
 
 
 .icon {
-  color: var(--font-color2);
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  padding: 1.5rem 2.5rem;
+  color:          var(--font-color2);
+  margin-bottom:  2rem;
+  font-size:      3rem;
+  padding:        1.5rem 2.5rem;
+  outline:        none;
 }
+
 .icon:hover {
-  color: var(--font-color3);
-  transform: translateY(-5px);
-  box-shadow: 7px 7px 5px 5px rgba(0,0,0,0.75);
-  transition: all 0.5s;
+  color:      var(--font-color3);
+  transform:  translateY(-5px);
+  transition: all .5s;
 }
 
 
@@ -379,15 +375,40 @@ small,
   #scrollTop:hover,
   #scrollDown:hover {
     background-color: var(--bg-secondary);
-    color: var(--border-color);
-    box-shadow: 7px 7px 5px 5px rgba(0,0,0,0.75);
-    transition: all 0.5s;
+    color:            var(--border-color);
+    transition:       all .5s;
   }
+
+
+
 
 
 /*------------------------------------*\
   #MAIN CONTENT
 \*------------------------------------*/
+
+
+
+
+
+
+
+/*------------------------------------*\
+  #ANIMATIONS
+\*------------------------------------*/
+
+.border-animation {
+  cursor:         pointer;
+  border-radius:  30% 70% 70% 30% / 30% 30% 70% 70%;
+  opacity:        .65;
+  animation:      border-shape 5s 2;
+}
+
+  .border-animation:hover {
+    opacity:    1;
+    animation:  border-shape 5s infinite;
+    transition: all .5s;
+  }
 
 @keyframes border-shape {
   0%    { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
@@ -409,26 +430,8 @@ small,
 
 
 /*------------------------------------*\
-  #ANIMATIONS
+  #MEDIA QUERIES
 \*------------------------------------*/
-
-.border-animation {
-  cursor:         pointer;
-  border-radius:  30% 70% 70% 30% / 30% 30% 70% 70%;
-  opacity:        .65;
-  animation:      border-shape 5s 2;
-}
-
-  .border-animation:hover {
-    opacity:    1;
-    animation:  border-shape 5s infinite;
-    transition: opacity .5s;
-  }
-
-
-
-
-
 
 @media only screen and (max-width: 800px) {
   #contact-links {
