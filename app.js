@@ -203,6 +203,18 @@ function scrollDownFunction() {
   window.scrollTo(0,document.querySelector("#welcome-section").scrollHeight + 75);
 }
 
+function formSubmit(e) {
+  const form = document.getElementById("form");
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  e.preventDefault();
+  alert(name);
+}
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const filter = document.getElementById("filter");
