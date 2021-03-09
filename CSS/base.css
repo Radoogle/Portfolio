@@ -14,15 +14,12 @@
  * CONTENTS
  *
  * SETTINGS
- * Variables............Globally-available variables.
- * Box-sizing...........Better default `box-sizing`.
- * Base font sizes......Setting the base font size.
- * Margins..............Top and bottom margins global values.
- * Anchors..............Implicit link settings.
+ * Variables...............Globally-available variables.
+ * GENERAL.................Better default `box-sizing`, scroll behaviour, margins and paddings.
+ * Base styles & fonts.....Setting the base font size.
+ * Margins.................Top and bottom margins global values.
+ * Anchors.................Implicit link settings.
  *
- * BASE STYLES
- * Headings.............H2, H6 styles.
- * Paragraphs...........Base styles.
  */
 
 
@@ -31,19 +28,6 @@
 /*------------------------------------*\
   #SETTINGS
 \*------------------------------------*/
-
-/**
- * 1. Variables for the colors used
- 
- * 2. A more rezonable model for box-sizing
- *
- * 3. This rule will modify the base font-size,
- * with whom are compared all rem units.
- *
- * 4. Normalize.css sets a margin top and bottom for these elements.
- * In order not to interfere with our layout, this rule will overwrite the margins.
- *
- */
 
 
 
@@ -54,17 +38,26 @@
 \*------------------------------------*/
 
 :root {
-  --bg-primary:                  #F4F3F5; /* [1] */
-  --bg-secondary:                #FFFFFF;
-  --bg-thirdly:                  #B2ACBA;
-
-  --bg-header:                   #6200EA;
-
-  --header-font-color:           #FFFFFF;
-
-  --primary-font-color:          #211138;
-  --secondary-font-color:        #6200EA;
-  --thirdly-font-color:          #FFFFFF;
+  /* background */
+  --bg-primary:           rgb(85, 85, 85); 
+  --bg-secondary:         #ccc;
+  --bg-third:             rgba(112,112,112,.7);
+  /* gradient */
+  --gradient1:            rgba(25,25,25,1);
+  --gradient2:            rgba(112,112,112,1);
+  /* header and footer */
+  --bg-header:            rgba(237,56,43,.9);
+  --bg-footer:            rgb(105, 105, 105);
+  /* border */
+  --border-color:         rgba(237,56,43,.9);
+  --border-color2:        #ccc;
+  /* fonts */
+  --font-color1:          rgba(25,25,25,1);
+  --font-color2:          #ccc;
+  --font-color3:          rgba(237,56,43,.9);
+  /* heights for navbar and footer */
+  --navbar-height:        7.5rem;
+  --footer-height:        7.5rem;
 }
 
 
@@ -72,36 +65,72 @@
 
 
 /*------------------------------------*\
-  #BOX-SIZING
+  #GENERAL
 \*------------------------------------*/
 
-* { box-sizing: border-box; } /* [2] */
+* { 
+box-sizing:       border-box; 
+scroll-behavior:  smooth; 
+margin:           0;
+padding:          0;
+}
 
 
 
 
 
 /*------------------------------------*\
-  #FONT SIZES
+  #BASE STYLES & FONT SIZES
 \*------------------------------------*/
 
-html { font-size: 10px; } /* [3] */
+html { font-size: 10px; } /* reference font size for REM units */
 
-h3 { font-size: 1.2rem; }
+body {
+  font-family:      'Roboto Mono', monospace;
+  color:            var(--primary-font-color);
+  background-color: var(--bg-secondary);
+}
 
-p  { font-size: 1.4rem; }
+h1 { 
+  font-size:    5rem;
+  font-weight:  bold;
+}
+
+h2 { font-size: 3.5rem; }
+
+h3,
+h4,
+p  { font-size: 2rem; }
+
+p  { font-weight: 200; }
 
 
 
 
 
 /*------------------------------------*\
-  #MARGINS
+  #MARGINS & PADDINGS
 \*------------------------------------*/
 
-h3 { margin: 0 0 .5rem 0; } /* [4] */
+h1, 
+h2, 
+h3, 
+h4, 
+p  { text-align: center; }
 
-p  { margin: 0; }
+
+
+h1 { margin-top: 7rem; } 
+
+h4 { margin-bottom: 2rem; }
+
+p  { padding: 15px 0; }
+
+.main { margin-top: var(--navbar-height); }
+
+.row { margin: 0 auto; }
+
+.welcome-text { margin-top: 25vh; }
 
 
 
@@ -112,27 +141,6 @@ p  { margin: 0; }
 \*------------------------------------*/
 
 a { 
-  text-decoration: none; /* [5] */
+  text-decoration: none;
   cursor:          pointer;
  }
-
-
-
-
-
-/*------------------------------------*\
-  #BASE STYLES
-\*------------------------------------*/
-
-body {
-  font-family:      "Montserrat", sans-serif;
-  color:            var(--primary-font-color);
-  background-color: var(--bg-secondary);
-}
-
-h3 {
-  font-weight:      bold;
-  line-height:      1.5rem;
-  letter-spacing:   .24rem;
-  text-transform:   uppercase;
-}

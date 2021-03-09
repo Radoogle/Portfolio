@@ -11,8 +11,6 @@
  * LAYOUT
  * Grid.................Rules for the grid container.
  * Flexbox..............Rules for the flexbox container and items.
- * Floats...............Rules for the floats items.
- * Elements.............Rules for the other containers and items.
  *
  */
 
@@ -24,10 +22,13 @@
   #GRID
 \*------------------------------------*/
 
-body {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+.project-tile {
+  display:                grid;
+  grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap:               2rem;
 }
+
+footer { display: grid; }
 
 
 
@@ -37,74 +38,18 @@ body {
   #FLEXBOX
 \*------------------------------------*/
 
-.flex-container           { display: flex; }
-
-.flex-row                 { flex-direction: row; }
-.flex-col                 { flex-direction: column; }
-
-.flex-end {
-  align-items: flex-end;
-  justify-content: flex-end;
- }
-
- .flex-start              { align-items: flex-start; }
-
-.header__content          { justify-content: space-between; }
-
-.header__logo             { align-self: center; }
-
-
-
-
-
-/*------------------------------------*\
-  #FLOATS
-\*------------------------------------*/
-
-.float-left   { float: left; }
-
-.float-right  { float: right; }
-
-.float-left::after,
-.float-right::after {
-  content:  "";
-  display:  table;
-  clear:    both;
+.navbar {
+  position: fixed;
+  top:      0;
+  left:     0;
+  display:  flex;
 }
 
+.main { display: flex; }
 
-
-
-
-/*------------------------------------*\
-  #HELPERS
-\*------------------------------------*/
-
-.clearfix::after {
-  content:  "";
-  display:  table;
-  clear:    both;
-}
-
-
-
-
-
-/*------------------------------------*\
-  #ELEMENTS
-\*------------------------------------*/
-
-.layout__item--full-width { width: 100%; }
-
-.right { 
+.row {
   position: relative;
-  height: 100vh;
+  display:  flex;
 }
 
-.compose { 
-  position: absolute;
-  right: 0;
-  bottom: 0; 
-  width: 100%;
-  height: 14rem;
-}
+.flex-col { flex-direction: column; }
