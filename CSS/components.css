@@ -138,7 +138,10 @@ nav ul { margin-right: 20px; }
   #PROJECTS SECTION
 \*------------------------------------*/
 
-.projects-section { background: linear-gradient(165deg, var(--gradient2)  0%, var(--gradient1) 100%); }
+.projects-section { 
+  min-height: 100vh;
+  background: linear-gradient(165deg, var(--gradient2)  0%, var(--gradient1) 100%);
+}
 
 .filter-container {
   padding:    2rem;
@@ -197,7 +200,11 @@ p {
 
 .contact-section {
   background-color: var(--bg-primary);
-  /* height: calc(100vh - 75px); */
+  min-height:       calc(100vh - var(--footer-height));
+}
+
+h2 {
+  margin-bottom: 4rem;
 }
 
 .contact-links-container,
@@ -458,11 +465,6 @@ small,
 
   form { width: 85%; }
 
-  #contact {
-    /* height: calc(100vh - 75px); */
-    height: 100%;
-  }
-
 }
 
 
@@ -483,8 +485,7 @@ small,
   }
 
   .self-image {
-    margin-top: 5rem;
-    margin-left: 5rem;
+    margin: 2rem 0;
   }
 
   h1 { font-size: 3rem; }
