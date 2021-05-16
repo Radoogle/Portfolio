@@ -1,5 +1,12 @@
 [ 
     {
+        "name": "Catch Of The Day",
+        "link": "https://catch-of-the-day-blue.vercel.app/",
+        "className": "tiles",
+        "imgSrc": "images/project-thumbnails/CatchOfTheDay.jpg",
+        "category": ["All", "codeberry", "React"]
+    },
+    {
         "name": "eCommerce Website",
         "link": "https://radoogle.github.io/redStore/",
         "className": "tiles",
