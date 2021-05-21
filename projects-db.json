@@ -1,4 +1,11 @@
 [ 
+   {
+        "name": "Conquering Responsive Layout",
+        "link": "https://radoogle.github.io/FinalChallengeKevinPowell/",
+        "className": "tiles",
+        "imgSrc": "images/project-thumbnails/ResponsiveLayout.jpg",
+        "category": ["All", "KevinPowell", "Responsive"]
+    },
     {
         "name": "Catch Of The Day",
         "link": "https://catch-of-the-day-blue.vercel.app/",
