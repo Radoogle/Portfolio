@@ -1,5 +1,13 @@
 [ 
    {
+        "name": "IP Address Tracker",
+        "link": "https://radoogle.github.io/ip-address-tracker/?",
+        "className": "tiles",
+        "imgSrc": "images/project-thumbnails/IpAddressTRacker.jpg",
+        "category": ["All", "FrontEndMentor", "Responsive", "API"]
+    },
+
+   {
         "name": "Conquering Responsive Layout",
         "link": "https://radoogle.github.io/FinalChallengeKevinPowell/",
         "className": "tiles",
