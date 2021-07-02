@@ -1,12 +1,32 @@
 [ 
    {
+        "name": "Profile Card Component",
+        "link": "https://radoogle.github.io/profile-card-component/",
+        "className": "tiles",
+        "imgSrc": "images/project-thumbnails/profile-card-component.jpg",
+        "category": ["All", "FrontEndMentor", "Responsive"]
+    },
+   {
+        "name": "3 Column Preview Card Component",
+        "link": "https://radoogle.github.io/3-column-preview-card-component/",
+        "className": "tiles",
+        "imgSrc": "images/project-thumbnails/3-column-preview-card-component.jpg",
+        "category": ["All", "FrontEndMentor", "Responsive"]
+    },
+   {
+        "name": "Stats Preview Card Component",
+        "link": "https://radoogle.github.io/stats-preview-card-component/",
+        "className": "tiles",
+        "imgSrc": "images/project-thumbnails/stats-preview-card-component.jpg",
+        "category": ["All", "FrontEndMentor", "Responsive"]
+    },
+   {
         "name": "IP Address Tracker",
-        "link": "https://radoogle.github.io/ip-address-tracker/?",
+        "link": "https://radoogle.github.io/ip-address-tracker/",
         "className": "tiles",
         "imgSrc": "images/project-thumbnails/IpAddressTRacker.jpg",
         "category": ["All", "FrontEndMentor", "Responsive", "API"]
     },
-
    {
         "name": "Conquering Responsive Layout",
         "link": "https://radoogle.github.io/FinalChallengeKevinPowell/",
